@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Tutorial 01</title>
+	<script type="text/javascript">
+		
+		var someValue = 25;
+		var otherValue = 23;
+
+		if(someValue > 30){
+			alert("First Case");
+		} else if (someValue < 30){
+			alert("Second Case");
+		} else if (someValue === 24){
+			alert("Third Case");
+		} else {
+			alert("Fourth Case");
+		}
+
+		if(someValue > 20 && otherValue > 20){
+			alert("Fifth Case");
+		}
+
+		if(someValue === 24 || otherValue === 20){
+			alert("Sixth Case");
+		}
+
+		if(someValue !== 24){
+			alert("Seventh Case");
+		}
+
+		someValue = false;
+
+		if (!someValue){
+			alert("Eigth Case");
+		}
+
+		var myResult = "";
+		myResult = (someValue === 24) ? "equal" : "not equal";
+		alert(myResult);
+
+		/*
+		>> myResult = (false) ? "True" : "False"; 
+		"False" 
+		>> myResult = typeof 24/"BOB"; 
+		NaN 
+		>> myResult = (24/"BOB") ? "True" : "False"; 
+		"False" 
+		>> myResult = (undefined) ? "True" : "False"; 
+		"False" 
+		>> myResult = (typeof someUndefinedVariable) ? "True" : "False"; 
+		"True" 
+		>> myResult = (3 == "3") ? "T" : "F"; 
+		"T" 
+		>> myResult = (3 == "3") ? "True" : "False"; 
+		"True" 
+		>> myResult = (3 === "3") ? "True" : "False"; 
+		"False" 
+		*/
+
+		var userName = "Taimoor";
+
+		switch (userName) {
+			case "Taimoor":
+			document.write("Taimoor");
+			break;
+			case "Khan":
+			document.write("Khan");
+			break;	
+			default:
+			document.write("Default");
+			break;
+		}
+
+		var righNow = new Date();
+		var currentHour = righNow.getHours();
+
+		switch (true) {
+			case (currentHour > 8 && currentHour < 12):
+			document.write("Good Morning");
+			break;
+			case (currentHour === 12):
+			document.write("Lunch Time");
+			break;
+			case (currentHour > 12 && currentHour < 18):
+			document.write("Supper");
+			break;		
+			default:
+			document.write("Default");
+			break;
+		}
+
+	</script>
+</head>
+<body>
+
+	<h1>Conditional Logic in JavaScript</h1>
+
+</body>
+</html>
