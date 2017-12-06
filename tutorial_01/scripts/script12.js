@@ -53,3 +53,25 @@ var z = planet;
 
 document.write(z.name);
 
+if (typeof planet.defense === "undefined"){
+	planet.defense = "ION";
+}
+
+document.write(planet.defense);
+
+for (member in planet){
+	document.write("<br />" + member + " ==> " + planet[member]);
+}
+
+function car(make, model, year){
+	this.make = make;
+	this.model = model;
+	this.year = year;
+}
+
+var myCar = new car("Acura", "RSX Type-S", 2003);
+
+var myOtherCar = new car("Honda", "Accord", 2005);
+
+document.write(myCar.make + " " + myCar.model + " " + myCar.year);
+
