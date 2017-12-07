@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Tutorial 01</title>
+	<script type="text/javascript">
+		
+		if (true) {
+			var x = 5;
+		}
+
+		alert(x);
+		
+
+		myScope = "global";
+		
+		(function() {
+			if (true){
+				var myScope = "function";
+			}
+			alert("inside the function, the scope is: " + myScope);
+		})();
+
+		alert("outside the function, the scope is: " + myScope);
+		
+
+		alert('window.myScope: ' + window.myScope);
+		
+	</script>
+</head>
+<body>
+
+	<h1>Understanding Function versus Global Scope</h1>
+
+</body>
+</html>

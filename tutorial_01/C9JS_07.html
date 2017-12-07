@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Tutorial 01</title>
+	<script type="text/javascript">
+		
+		function myNewFunction(){
+			alert("Hello");
+			document.getElementById("mine").innerHTML = "New test";
+		}
+
+		function myNewFunction2(myValue){
+			alert("Howdy! " + myValue);
+		}
+
+		myNewFunction2("New Value");
+
+		function add(firstNumber, secondNumber){
+			return firstNumber + secondNumber;
+		}
+
+		var myResult = add(1,2);
+		alert(myResult);
+
+		function add(){
+			var tempValue = 0;
+			for (i = 0; i < arguments.length; i++){
+				tempValue += arguments[i];
+			}
+			return tempValue;
+		}
+
+		var myNewResult = add(1,2,3,4,5,6,7,8,9);
+		alert(myNewResult);
+		
+
+		var addMe = function(){
+			return arguments[0] + arguments[1];
+		}
+
+		var newValue = addMe(1,6);
+		alert(newValue);
+		
+
+		var myResults = (function(){
+			return arguments[0] + arguments[1];
+		})(1,7);
+		alert(myResults);
+		
+		alert((function(){
+			return arguments[0] + arguments[1];
+		})(1,15));
+
+	</script>
+</head>
+<body>
+
+	<h1>JavaScript Functions</h1>
+
+	<p id="mine">lalalalallalal</p>
+
+	<input type="submit" value="Click Me" onclick="myNewFunction();">
+
+</body>
+</html>

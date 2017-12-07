@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Tutorial 01</title>
+	<script type="text/javascript">
+		
+		var candidates = [];
+		candidates[0] = "Thor";
+		candidates[1] = "Hulk";
+		candidates[2] = "Iron Man";
+		candidates[3] = "Captain America";
+
+		alert("Super Hero: " + candidates[1]);
+		
+
+		var candidates = ["Thor","Hulk","Iron Man","Captain America"];
+		alert("Super Hero: " + candidates[3]);
+
+		
+
+		var flightDate = new Date("September 22, 2004");
+		var myValues = ["Oceanic", 815, flightDate];
+
+		for (i in myValues){
+			document.write("<br />" + myValues[i]);
+		}
+
+		// Associative Arrays
+		var caveList = [];
+		caveList["Thor"] = 10;
+		caveList["Hulk"] = 20;
+		caveList["Iron Man"] = 30;
+		caveList["Captain America"] = 40;
+		caveList["Hawkeye"] = 50;
+		caveList["Black Widow"] = 60;
+
+		alert("Superhero: " + caveList["Thor"]);
+
+	</script>
+</head>
+<body>
+
+	<h1>JavaScript Arrays</h1>
+
+</body>
+</html>

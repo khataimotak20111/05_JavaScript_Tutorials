@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Tutorial 01</title>
+	<script type="text/javascript">
+		
+		var playlist = [];
+		playlist[0] = "AudioSlave";
+		playlist[1] = "SoundGarden";
+		playlist[2] = "Linkin Park";
+		playlist[3] = "Metallica";
+		playlist[4] = "Creed";
+
+		// while loop
+		var i = 0;
+		while (i < playlist.length) {
+			document.write("<br /> Now Playing: " + playlist[i]);
+			i++;
+		}
+
+		// do while loop
+		var someResult = false;
+		do {
+			document.write("<br /> Will run at least once!");
+		} while (someResult)
+
+		// for loop
+		for (var j = 0; j < playlist.length; j++) {
+			document.write("<br /> Now Playing: " + playlist[j]);
+		}
+
+		// for in loop
+		for (k in playlist){
+			document.write("<br /> Now Playing: " + playlist[k]);
+		}
+
+	</script>
+</head>
+<body>
+
+	<h1>Looping Statements in JavaScript</h1>
+
+</body>
+</html>
