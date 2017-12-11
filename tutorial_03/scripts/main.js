@@ -195,3 +195,57 @@ if(blue != red){
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
+
+var firstName = "Taimoor";
+var lastName = "Khan1";
+
+if (firstName == "Taimoor") {
+	if (lastName == "Khan") {
+		document.write("Correct");
+	} else {
+		document.write("Not Correct");
+	}
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+var first = "Taimoor";
+var last = "Khan2";
+
+if ((first == "Taimoor") && (last == "Khan")) {
+	document.write("AND");
+}
+
+if ((first == "Taimoor") || (last == "Khan")) {
+	document.write("OR");
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+var girl = "Raba";
+
+switch(girl){
+	case "Natalie":
+		document.write("You must like garden state");
+		break;
+	case "Rabia":
+		document.write("Your Girlfreind");
+		break;
+	default:
+		document.write("nanananana");
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+for (var i = 0; i < 10; i++) {
+	document.write("<br />I love myself " + i);
+}
+
+var x = 0;
+
+while(x < 10){
+	document.write("<br />I love Marvel " + x);
+	x++;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
