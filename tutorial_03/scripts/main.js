@@ -191,7 +191,7 @@ var red = 76;
 if(blue != red){
 	document.write("I love pancakes");
 } else {
-	document.write("I love eggs");
+	document.write("I love egg");
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
