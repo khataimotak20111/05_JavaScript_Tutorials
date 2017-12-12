@@ -40,3 +40,64 @@ document.write(people);
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
+var movies = new Array("Avatar","Good Will Hunting","Thor","Hulk");
+
+var string1 = movies.join(" / ");
+
+alert(string1);
+
+movies.pop();
+
+var string2 = movies.join(" / ");
+
+alert(string2);
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+var bp = new Array("Head","Shoulders","Knees","Toes");
+
+bp.reverse();
+
+alert(bp);
+
+bp.push("Nose","Ribs");
+
+alert(bp);
+
+bp.sort();
+
+alert(bp);
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+var pie = prompt("Enter your name: ", "text goes here");
+document.write("<br /><br /><br /><br /><br />Hello " + pie);
+
+var crap = new Array(3);
+
+for (var i = 0; i < 3; i++) {
+	crap[i] = prompt("Add something to the array:", "");
+}
+
+alert(crap.join(" - "));
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+var stuff = new Array("Apples","Pears","Bacon","TunaHam");
+
+stuff.sort();
+
+for (var i = 0; i < stuff.length; i++) {
+	document.write("<br />" + stuff[i]);
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+var bucky = new Array();
+
+bucky["color"] = "blue";
+bucky["food"] = "burgers";
+
+document.write("<br /><br />" + bucky["food"]);
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
